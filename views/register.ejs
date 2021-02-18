@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Newsletter</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- stylesheet css -->
+    <!-- after using express.static, to write href we assume we are already inside the public folder -->
+    <!-- so we dont write href="public/css/styles.css" rather href="css/styles.css" -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <main class="form-signup">
+        <form action="/register" method="post">
+            <img class="mb-4"
+                src="images/kisspng-initial-coin-offering-logo-brand-coinschedule-5b2719283e2c11.8550989615292890002547.png"
+                alt="" width="200" height="75">
+            <h1 class="h3 mb-3 fw-normal">REGISTER</h1>
+
+            <input name="username" type="text" id="inputEmail" class="form-control top" placeholder="Name" required
+                autofocus>
+            <input name="email" type="email" id="inputEmail" class="form-control middle" placeholder="Email" required
+                autofocus>
+            <input name="password" type="password" id="inputPassword" class="form-control bottom" placeholder="Password"
+                required>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Himanshu Sinha</p>
+        </form>
+    </main>
+</body>
+
+</html>
